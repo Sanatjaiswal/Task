@@ -1,0 +1,14 @@
+import "./Card.css";
+import React from "react";
+
+const card = (props) => {
+  return (
+    <div className="card" style={{overflow:"hidden"}}>
+      <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+};
+
+export default card;
