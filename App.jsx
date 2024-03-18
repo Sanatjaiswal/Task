@@ -11,12 +11,45 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setCount([
-        { id: 1, content: "Card 1" },
-        { id: 2, content: "Card 2" },
-        { id: 3, content: "Card 3" },
-        { id: 4, content: "Card 4" },
-        { id: 5, content: "Card 5" },
-        { id: 6, content: "Card 6" },
+        { id: 1, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div>},
+
+      
+        { id: 2, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div> },
+
+
+        { id: 3, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div> },
+
+
+        { id: 4, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div> },
+
+
+        { id: 5, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div> },
+
+        { id: 6, content: <div className="card" style={{overflow:"hidden"}}>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" width="299" style={{border:"2px solid black"}}/>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </div> },
       ]);
       setLoading(false);
     }, 5000);
